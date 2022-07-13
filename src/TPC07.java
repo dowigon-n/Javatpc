@@ -2,6 +2,7 @@ public class TPC07 {
 	public static void main(String[] args) {
 		
 		// 6. 매개변수를 전달하는 기법
+		// 메서드는 변수다. (매개 변수 = parameter)
 		
 		
 		int a=20;
