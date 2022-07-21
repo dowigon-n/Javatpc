@@ -14,7 +14,7 @@ public class TPC08 {
 		int sum=a+b;
 		return sum;
 	}
-
+ 
 }
 
 // static 키워드는 프로그램을 실행하기 전에 메서드의 기계어 코드를 자동으로 메모리에 로딩시키기 위해 사용하는 키워드임.
