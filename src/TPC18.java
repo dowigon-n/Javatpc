@@ -7,12 +7,10 @@ import kr.tpc.myUtil;
 public class TPC18 {
 	public static void main(String[] args) {
 
-		// 1. Java에서 제공해주는 class들... => API
-		// 문자열(String)
+		// 1. Java에서 제공해주는 class들... -> API
+		// 문자열(String) : String은 디폴트 패키지에 존재하므로 생략해도 된다.
+		// 기본 개념에 의하면 java.lang.String str=new java.lang.String(); 으로 객체를 생성해야 하지만 생략할 수 있다는 의미이다.
 		
-		// 이런 String은 디폴트 패키지에 존재해서 생략해도 된다.
-		//기본 개념에 의하면 java.lang.String str=new java.lang.String(); 이라고 기재해야 한다.
-		 
 		String str=new String("APPLE");
 		
 		System.out.println(str.toString());
@@ -25,8 +23,11 @@ public class TPC18 {
 		int sum=my.hap();
 		System.out.println(sum);
 		
+		
 		// 3. 다른 회사에서 만들어 놓은 class들.. => API
-		// Gson -> json
+		// Gson -> json : MvcRepository에서 gson-2.8.5.jar 라이브러리 파일을 다운받고 설정한다.
+		// 프로젝트 우클릭>Build Path>configure Build Path>Classpath>Add External jar... 에 jar 파일을 추가한다. 
+		
 		
 		Gson gson=new Gson();
 		BookVO vo=new BookVO("자바", 13000, "영진", 600);
